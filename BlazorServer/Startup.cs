@@ -42,6 +42,11 @@ namespace BlazorServer
                 config.VisibleStateDuration = 3000;
             });
             services.AddSingleton<WeatherForecastService>();
+            services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = Configuration.GetConnectionString("Redis");
+                options.InstanceName = "BlazorServer_" + DateTime.Now.ToString("yyyyMMdd");
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
