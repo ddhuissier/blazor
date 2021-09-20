@@ -4,3 +4,5 @@
 
 /BlazorServer/bin/Debug/net5.0
 /BlazorServer/obj
+/RazorClassLibrary/bin/Debug
+/RazorClassLibrary/obj

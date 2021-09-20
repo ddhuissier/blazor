@@ -1,0 +1,17 @@
+﻿@inject IJSRuntime JSRuntime
+
+<div class="my-component">
+    This component is defined in the <strong>ComponentLibrary</strong> package.
+</div>
+
+<MatButton Icon="favorite" OnClick="@RunOnClick" Label="Material Design Button"></MatButton>
+
+@code
+        {
+
+    public async Task RunOnClick(MouseEventArgs e)
+    {
+        await JSRuntime.InvokeAsync<object>("window.alert", "Test");
+    }
+
+}

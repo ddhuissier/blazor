@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\RazorClassLibrary\RazorClassLibrary.csproj" />
+    <ProjectReference Include="..\RazorClassLibrary\RazorClassLibrary.csproj" />
   </ItemGroup>
 
 </Project>
